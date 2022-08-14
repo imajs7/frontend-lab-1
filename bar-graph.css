@@ -1,0 +1,184 @@
+:root {
+  --animation-duration: 2000ms;
+
+  --container-bg: rgb(0 0 0 / 0.1);
+  --bar-bg: rgb(100% 100% 100%);
+  --bar-psuedo-bg: rgb(0 0 0 / 0.5);
+
+  --bar-width: 2rem;
+  --bar-height: 60%;
+  --bar-gap: 1.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  row-gap: var(--bar-gap);
+  background-color: var(--container-bg);
+  padding: 2rem 1.5rem 1.5rem;
+  height: var(--bar-height);
+}
+.chart-container .graph {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.chart-container .graph .figure {
+  margin: 0 20px;
+  text-align: center;
+}
+.chart-container .graph .figure .bar {
+  width: var(--bar-width);
+  background-color: var(--bar-bg);
+  height: 90%;
+  position: relative;
+  margin-bottom: 30%;
+  overflow: hidden;
+}
+.chart-container .graph .figure .bar::after {
+  content: "";
+  background-color: var(--bar-psuedo-bg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* percentage class */
+.percent-0::after {
+  height: 0%;
+}
+.percent-10::after {
+  animation: animate-bar-graph-fill-1 var(--animation-duration) ease-in-out;
+  height: 10%;
+}
+.percent-20::after {
+  animation: animate-bar-graph-fill-2 var(--animation-duration) ease-in-out;
+  height: 20%;
+}
+.percent-30::after {
+  animation: animate-bar-graph-fill-3 var(--animation-duration) ease-in-out;
+  height: 30%;
+}
+.percent-40::after {
+  animation: animate-bar-graph-fill-4 var(--animation-duration) ease-in-out;
+  height: 40%;
+}
+.percent-50::after {
+  animation: animate-bar-graph-fill-5 var(--animation-duration) ease-in-out;
+  height: 50%;
+}
+.percent-60::after {
+  animation: animate-bar-graph-fill-6 var(--animation-duration) ease-in-out;
+  height: 60%;
+}
+.percent-70::after {
+  animation: animate-bar-graph-fill-7 var(--animation-duration) ease-in-out;
+  height: 70%;
+}
+.percent-80::after {
+  animation: animate-bar-graph-fill-8 var(--animation-duration) ease-in-out;
+  height: 80%;
+}
+.percent-90::after {
+  animation: animate-bar-graph-fill-9 var(--animation-duration) ease-in-out;
+  height: 90%;
+}
+.percent-100::after {
+  animation: animate-bar-graph-fill-10 var(--animation-duration) ease-in-out;
+  height: 100%;
+}
+
+/* Animations */
+@keyframes animate-bar-graph-fill-1 {
+  0% {
+    bottom: -10%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-2 {
+  0% {
+    bottom: -20%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-3 {
+  0% {
+    bottom: -30%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-4 {
+  0% {
+    bottom: -40%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-5 {
+  0% {
+    bottom: -50%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-6 {
+  0% {
+    bottom: -60%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-7 {
+  0% {
+    bottom: -70%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-8 {
+  0% {
+    bottom: -80%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-9 {
+  0% {
+    bottom: -90%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes animate-bar-graph-fill-10 {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
