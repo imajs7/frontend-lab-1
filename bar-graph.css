@@ -61,48 +61,48 @@
   height: 0%;
 }
 .percent-10::after {
-  animation: animate-bar-graph-fill-1 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-1 var(--animation-duration) ease-in-out;
   height: 10%;
 }
 .percent-20::after {
-  animation: animate-bar-graph-fill-2 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-2 var(--animation-duration) ease-in-out;
   height: 20%;
 }
 .percent-30::after {
-  animation: animate-bar-graph-fill-3 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-3 var(--animation-duration) ease-in-out;
   height: 30%;
 }
 .percent-40::after {
-  animation: animate-bar-graph-fill-4 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-4 var(--animation-duration) ease-in-out;
   height: 40%;
 }
 .percent-50::after {
-  animation: animate-bar-graph-fill-5 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-5 var(--animation-duration) ease-in-out;
   height: 50%;
 }
 .percent-60::after {
-  animation: animate-bar-graph-fill-6 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-6 var(--animation-duration) ease-in-out;
   height: 60%;
 }
 .percent-70::after {
-  animation: animate-bar-graph-fill-7 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-7 var(--animation-duration) ease-in-out;
   height: 70%;
 }
 .percent-80::after {
-  animation: animate-bar-graph-fill-8 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-8 var(--animation-duration) ease-in-out;
   height: 80%;
 }
 .percent-90::after {
-  animation: animate-bar-graph-fill-9 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-9 var(--animation-duration) ease-in-out;
   height: 90%;
 }
 .percent-100::after {
-  animation: animate-bar-graph-fill-10 var(--animation-duration) ease-in-out;
+  animation: bar-graph-fill-10 var(--animation-duration) ease-in-out;
   height: 100%;
 }
 
 /* Animations */
-@keyframes animate-bar-graph-fill-1 {
+@keyframes bar-graph-fill-1 {
   0% {
     bottom: -10%;
   }
@@ -110,7 +110,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-2 {
+@keyframes bar-graph-fill-2 {
   0% {
     bottom: -20%;
   }
@@ -118,7 +118,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-3 {
+@keyframes bar-graph-fill-3 {
   0% {
     bottom: -30%;
   }
@@ -126,7 +126,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-4 {
+@keyframes bar-graph-fill-4 {
   0% {
     bottom: -40%;
   }
@@ -134,7 +134,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-5 {
+@keyframes bar-graph-fill-5 {
   0% {
     bottom: -50%;
   }
@@ -142,7 +142,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-6 {
+@keyframes bar-graph-fill-6 {
   0% {
     bottom: -60%;
   }
@@ -150,7 +150,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-7 {
+@keyframes bar-graph-fill-7 {
   0% {
     bottom: -70%;
   }
@@ -158,7 +158,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-8 {
+@keyframes bar-graph-fill-8 {
   0% {
     bottom: -80%;
   }
@@ -166,7 +166,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-9 {
+@keyframes bar-graph-fill-9 {
   0% {
     bottom: -90%;
   }
@@ -174,7 +174,7 @@
     bottom: 0;
   }
 }
-@keyframes animate-bar-graph-fill-10 {
+@keyframes bar-graph-fill-10 {
   0% {
     bottom: -100%;
   }
